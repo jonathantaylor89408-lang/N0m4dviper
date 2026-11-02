@@ -1,0 +1,1 @@
+{"operator": "Nomad", "passcode": "343911", "local_base": "http://localhost:11434/v1", "model": "llama3", "gumroad_token": "cd ~/viper_node && grep -i \"gumroad\" .env 2>/dev/null || echo \"[!] Token not found in .env vault. Check local configuration.\"", "trial_product_id": ""}
