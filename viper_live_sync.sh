@@ -20,18 +20,18 @@ log_msg() {
     echo "[$timestamp] [$level] $message" | tee -a "$LOG_FILE"
 }
 
-log_msg "INFO" "Initializing super compliant silent sync protocol..."
+log_msg "INFO" "Initializing live sync push sequence..."
 
 if [ -f "$VAULT_PATH" ]; then
-    log_msg "SUCCESS" "Vault verified intact. Executing zero-disruption staging push..."
+    log_msg "SUCCESS" "Vault verified intact. Staging and pushing updates..."
 else
     log_msg "ERROR" "Critical fault: Vault baseline missing."
     exit 1
 fi
 
-# Git automated compliance push
+# Execute git push sequence (respecting .gitignore for sensitive paths)
 git add .
-git commit -m "Automated compliance sync: V1P34C0DE silent live update" || echo "No changes to commit."
+git commit -m "Automated compliance sync: V1P34C0DE live push update" || echo "No changes to commit."
 git push origin main
 
-log_msg "SUCCESS" "Live node synchronization and silent update completed successfully."
+log_msg "SUCCESS" "Live node synchronization and remote push completed successfully."
