@@ -1,3 +1,4 @@
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 import os, sys, time, subprocess, hashlib
 
 V = os.path.expanduser("~/viper_node")

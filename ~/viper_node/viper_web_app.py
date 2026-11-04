@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 """
 Viper AI Suite
 Full-featured universal multi-provider playground.

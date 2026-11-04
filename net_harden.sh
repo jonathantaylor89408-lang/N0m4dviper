@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 echo "=== VIPER-A16 NETWORK HARDENING & TUNNEL PREP ==="
 
 # 1. Test local network interface and routing table

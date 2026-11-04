@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 # VIPER :: INVINCIBLE RECOVERY WRITER :: ROOTLESS :: SELF-TARGETING
 set -euo pipefail
 

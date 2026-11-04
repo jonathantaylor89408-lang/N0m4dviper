@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 import os, sys, json, hashlib
 
 VAULT_PATH = os.path.expanduser("~/viper_node/.v1p34c0de/V1P34C0DE.vipercode")

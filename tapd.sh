@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/python3
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 import os, sys, time, json, subprocess, hashlib, signal
 V = os.path.expanduser("~/viper_node")
 NFC,OPS,C,HOOK = f"{V}/nfc",f"{V}/ledger/ops.log",f"{V}/ledger/chain.log",f"{V}/nfc/hook.py"

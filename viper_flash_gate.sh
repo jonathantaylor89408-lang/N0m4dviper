@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 # VIPER FLASH GATE // Peppy Recovery Raw Block Flasher
 # Usage: bash viper_flash_gate.sh /dev/block/sdb
 

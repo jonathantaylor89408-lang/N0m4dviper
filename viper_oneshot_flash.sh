@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 set -euo pipefail
 
 TARGET_IMAGE="$HOME/storage/shared/Download/peppy_recovery.bin"

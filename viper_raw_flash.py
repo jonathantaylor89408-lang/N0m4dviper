@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 import os, sys, subprocess
 TARGET_IMAGE = os.path.expanduser('~/storage/shared/Download/peppy_recovery.bin')
 def run_cmd(cmd):

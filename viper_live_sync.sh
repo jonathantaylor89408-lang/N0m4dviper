@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 # ==============================================================================
 # VIPER-ELITE: REAL-TIME COMPLIANT SILENT NODE SYNC & DEPLOYMENT UTILITY
 # ==============================================================================

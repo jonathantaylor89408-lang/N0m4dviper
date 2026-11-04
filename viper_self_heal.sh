@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 # ==============================================================================
 # VIPER-A16 // Local Self-Heal, Change Detection & V1P34C0DE Override Updater
 # Directives: Local execution only. No remote pushes. Silent ledger logging.

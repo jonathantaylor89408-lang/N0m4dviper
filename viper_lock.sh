@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 # VIPER NODE :: PERSISTENT WAKE-LOCK KEEPALIVE
 while true; do
     termux-wake-lock

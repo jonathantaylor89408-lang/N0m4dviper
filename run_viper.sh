@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
 echo "[*] Checking local Ollama engine status..."
 if ! pgrep -x "ollama" > /dev/null; then
     echo "[+] Starting Ollama background server..."
