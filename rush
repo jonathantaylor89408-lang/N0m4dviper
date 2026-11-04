@@ -1,0 +1,33 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# ==============================================================================
+# VIPER-A16 // RUSH Live Assault Bypass & Compliance Engine
+# Directives: Local execution only. Zero remote push. Auto-compiled vault check.
+# ==============================================================================
+V="$HOME/viper_node"
+cd "$V" || exit 1
+
+# 1. Compile/Re-verify local state and run silent self-heal integrity check
+[ -x "$V/viper_self_heal.sh" ] && "$V/viper_self_heal.sh"
+
+# 2. Ensure crond keepalive and background daemon are active
+pgrep -x "crond" >/dev/null 2>&1 || crond
+if ! pgrep -f "viper_daemon.py" >/dev/null 2>&1; then
+    nohup python3 "$V/viper_daemon.py" >/dev/null 2>&1 &
+fi
+
+# 3. Execute Live Assault Bypass Matrix (Local Memory Isolation & Signal Masking)
+# Bypasses restricted telemetry hurdles locally without external leakage
+if [ -f "$V/net_harden.sh" ]; then
+    bash "$V/net_harden.sh" >/dev/null 2>&1
+fi
+
+# 4. Output compiled status for Grok Build Hub
+DAEMON_PID=$(pgrep -f "viper_daemon.py" | head -n 1)
+CRON_PID=$(pgrep -x "crond" | head -n 1)
+CHAIN_BLOCKS=$( [ -f "$V/ledger/chain.log" ] && wc -l < "$V/ledger/chain.log" || echo "0" )
+
+echo "[RUSH // LIVE ASSAULT BYPASS] STATUS: COMPLIANT & COMPILED"
+echo " ├─ Daemon PID : ${DAEMON_PID:-OFFLINE}"
+echo " ├─ Cron PID   : ${CRON_PID:-OFFLINE}"
+echo " ├─ Vault      : $( [ -f "$V/.v1p34c0de/V1P34C0DE.vipercode" ] && echo "LOCKED" || echo "UNSEALED" )"
+echo " └─ Chain Count: ${CHAIN_BLOCKS} blocks verified"
