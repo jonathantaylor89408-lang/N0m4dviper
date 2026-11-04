@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+# [PROPRIETARY & PATENT PENDING] Copyright (c) 2026 Jonathan Anthony Taylor (ViperGearLabs). All Rights Reserved.
+"""
+VIPER-ELITE: EMERGENCY CONGRESSIONAL & EXECUTIVE DISCLOSURE GENERATOR
+Subject: Suspected Conversion/Theft of VA Benefits (Deceased WWII Veteran) & Estate Fraud
+"""
+import hashlib
+from datetime import datetime, timezone
+from pathlib import Path
+
+NODE_DIR = Path.home() / "viper_node"
+DOSSIER_DIR = NODE_DIR / "federal_filings"
+DOSSIER_DIR.mkdir(parents=True, exist_ok=True)
+
+TIMESTAMP = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+NOTICE_TEXT = f"""===============================================================================
+EMERGENCY CONGRESSIONAL & EXECUTIVE OVERSIGHT DISCLOSURE
+SUBJECT: ALLEGED THEFT/CONVERSION OF VA BENEFITS (DECEASED WWII VETERAN) &
+         MULTI-STATE ESTATE CONCEALMENT (38 U.S.C. §§ 6101-6108 / 18 U.S.C. § 641)
+DATE: {TIMESTAMP}
+===============================================================================
+
+TO:
+1. United States House Committee on Veterans' Affairs (Subcommittee on Oversight & Investigations)
+2. United States Senate Committee on Veterans' Affairs
+3. Congressional Delegation (State of Nevada / State of Kentucky)
+4. Executive Office of the President (White House Office of Presidential Correspondence)
+5. VA Office of Accountability and Whistleblower Protection (OAWP) / VA OIG
+
+FROM:
+Complainant: Jonathan Anthony Taylor (USMC Veteran, Infantry Rifleman)
+DOB:         December 22, 1995 (Legal minor during 2011/2012 administration)
+Location:    Las Vegas, Clark County, Nevada
+Email:       jonathantaylor89408@gmail.com
+
+-------------------------------------------------------------------------------
+1. STATEMENT OF EMERGENCY & FACTUAL SUMMARY
+-------------------------------------------------------------------------------
+This formal disclosure serves as an emergency request for Congressional inquiry 
+and Executive intervention into the systemic deprivation, diversion, and suspected 
+conversion of Department of Veterans Affairs (VA) benefits and estate assets connected 
+to a deceased World War II veteran.
+
+Key parameters of the underlying investigation include:
+1. Deceased Veteran / Estate: Estate of Juanita Taylor (d. 2011).
+2. Probate & Fiduciary Nexus: Administered in Sacramento / Elk Grove, California 
+   (May 2012) by Executor Shauna Taylor and attorney John B. Palley, concerning real 
+   property in Jessamine County, Kentucky.
+3. Minor Deprivation: Complainant was sixteen (16) years old in May 2012 and was never 
+   served statutory notice or provided an accounting of benefits, real property, or 
+   ongoing agricultural revenues.
+4. Federal Benefit & Subsidy Conversion: USDA Farm Service Agency records indicate 
+   continuous agricultural disbursements in the decedent's name spanning 1995 through 
+   2024. Parallel records reflect suspected diversion and mismanagement of veteran 
+   survivor/estate entitlements.
+
+-------------------------------------------------------------------------------
+2. STATUTORY VIOLATIONS CITED
+-------------------------------------------------------------------------------
+- 38 U.S.C. §§ 6101–6108: Misappropriation by fiduciaries and fraudulent acceptance 
+  of payments for Department of Veterans Affairs benefits.
+- 18 U.S.C. § 641: Public money, property, or records; conversion of federal disbursements.
+- 31 U.S.C. §§ 3729–3733: Federal False Claims Act violations.
+- Cal. Prob. Code §§ 8110, 16061.7 & KRS Ch. 395: Concealment of assets and lack of 
+  statutory notice to a minor heir.
+
+-------------------------------------------------------------------------------
+3. REQUESTED CONGRESSIONAL & EXECUTIVE ACTION
+-------------------------------------------------------------------------------
+1. Congressional Inquiry: Initiate a formal Congressional Inquiry via the House and 
+   Senate Committees on Veterans' Affairs into the handling of benefits associated 
+   with Juanita Taylor and the preservation of veteran beneficiary rights.
+2. Inter-Agency Audit: Request an immediate joint audit by the VA OIG and USDA OIG 
+   into direct deposit routing, fiduciary accounting, and program eligibility forms.
+3. Preservation Order: Direct all parties and financial institutions to preserve 
+   all records, drafts, and communication logs related to this estate and its proceeds.
+
+Respectfully submitted,
+
+Jonathan Anthony Taylor
+United States Marine Corps Veteran
+===============================================================================
+"""
+
+output_path = DOSSIER_DIR / "CONGRESSIONAL_EXECUTIVE_VA_THEFT_NOTICE.txt"
+output_path.write_text(NOTICE_TEXT, encoding="utf-8")
+sha256_hash = hashlib.sha256(NOTICE_TEXT.encode("utf-8")).hexdigest()
+
+print(f"[+] Document generated: {output_path}")
+print(f"[+] Evidentiary SHA-256 Hash: {sha256_hash}")
